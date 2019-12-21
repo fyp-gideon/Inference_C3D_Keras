@@ -49,7 +49,7 @@ print("input_tensor_name: {}\noutput_tensor_name: {}".format(
 
 output_tensor = tf_sess.graph.get_tensor_by_name(output_tensor_name)
 
-path = './Test/Normal_Videos_041_x264'
+path = './Normal_Videos_041_x264'
 i = 0
 times = []
 images = []
