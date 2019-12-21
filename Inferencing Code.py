@@ -4,10 +4,8 @@ from tensorflow.python.platform import gfile
 from PIL import Image
 import numpy as np
 import time
-from matplotlib import pyplot as plt
-import cv2
 from tensorflow.keras.preprocessing import image
-from tensorflow.keras.applications.mobilenet_v2 import preprocess_input, decode_predictions
+from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 import os
 from numpy import array
 import time
@@ -23,7 +21,7 @@ def get_frozen_graph(graph_file):
     return graph_def
 
 
-trt_graph = get_frozen_graph('./model/TensorRT_Model.pb')
+trt_graph = get_frozen_graph('../model/TensorRT_Model.pb')
 
 # Create session and load graph
 tf_config = tf.ConfigProto()
@@ -49,7 +47,7 @@ print("input_tensor_name: {}\noutput_tensor_name: {}".format(
 
 output_tensor = tf_sess.graph.get_tensor_by_name(output_tensor_name)
 
-path = './Normal_Videos_041_x264'
+path = '../Normal_Videos_041_x264'
 i = 0
 times = []
 images = []
