@@ -21,7 +21,7 @@ def get_frozen_graph(graph_file):
     return graph_def
 
 
-trt_graph = get_frozen_graph('../model/TensorRT_Model.pb')
+trt_graph = get_frozen_graph('../models/TensorRT_Model.pb')
 
 # Create session and load graph
 tf_config = tf.ConfigProto()
