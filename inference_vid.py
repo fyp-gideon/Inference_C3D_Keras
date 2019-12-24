@@ -47,7 +47,7 @@ print("input_tensor_name: {}\noutput_tensor_name: {}".format(
 
 output_tensor = tf_sess.graph.get_tensor_by_name(output_tensor_name)
 
-video_path = './Abuse020_x264.mp4'
+video_path = '../Abuse020_x264.mp4'
 cap = cv2.VideoCapture(video_path)
 
 i = 0
