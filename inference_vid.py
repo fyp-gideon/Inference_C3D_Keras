@@ -9,6 +9,7 @@ from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 import os
 from numpy import array
 import time
+import cv2
 
 output_names = ['activation_1/Softmax']
 input_names = ['input_1']
